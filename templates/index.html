@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<html lang="en">
+
+<head>
+ 
+
+  <main role="main">
+
+    <marquee direction="right" 
+    behavior="alternate" 
+    style="border:BLACK 0px SOLID">
+        <b>Bachelor's Laundery Welcomes {{request.user}}</b>
+</marquee>
+
+    
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+            src="/static/img/h1.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Wash</h2>
+          <p>Laundry means regular washing of clothes, which helps in removing dirt and bacteria to give us freshness.</p>
+          <p><a class="btn btn-secondary" href="/services"role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+          src="/static/img/h2.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Clean</h2>
+          <p>The process of rinsing, soaking, and 
+              washing clothes with detergents helps to remove dirt.</p>
+          <p><a class="btn btn-secondary" href="/services" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle"
+          src="/static/img/h3.jpg"
+            alt="Generic placeholder image" width="140" height="140">
+          <h2>Dry</h2>
+          <p>Laundry is a weekend task, which some enjoy while doing it and some feel suffocated to take up.</p>
+          <p><a class="btn btn-secondary" href="/services"role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> Behind every working woman is <span class="text-muted">an enormous pile of unwashed laundry.</span>
+          </h2>
+          <p class="lead">Laundry, liturgy and women's work all serve to ground us in the world, and they need not grind us down. Our daily tasks, whether we perceive them as drudgery or essential, life-supporting work, do not define who we are as women or as human beings.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+            style="width: 500px; height: 500px;"
+            src="/static/img/h4.jpg"
+            data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Love is a mental illness going in and mental illness coming out.<span class="text-muted"> In between, you do a lot of laundry.</span></h2>
+          <p class="lead">No other job in the world could possibly dispossess one so completely as this job of teaching. You could stand all day in a laundry, for instance, still in possession of your mind.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+          src="/static/img/h5.jpg"
+            data-holder-rendered="true" style="width: 500px; height: 500px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, If I don't do laundry today, <span class="text-muted">I'm gonna have to buy new clothes tomorrow.</span></h2>
+          <p class="lead">We’re the one laundry app that lets you do your laundry on demand. So stop wasting time with washer and dryer waiting games.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+          src="/static/img/h6.jpg"
+            data-holder-rendered="true" style="width: 500px; height: 500px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>© 2022-kishan&abhishek Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none"
+    style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+    <defs>
+      <style type="text/css"></style>
+    </defs>
+    <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">
+      500x500</text>
+  </svg>
+</body>
+
+</html>
+
+
+{% endblock body%}
